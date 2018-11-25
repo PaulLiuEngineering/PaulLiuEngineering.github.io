@@ -1,0 +1,45 @@
+
+/* #mainbody{
+    padding-left:10%;
+}
+
+#compresser{
+    background: aqua
+} */
+
+map{
+    cursor: pointer;
+}
+
+.img{
+    float:left;
+}
+
+#components{
+    padding-left: 10%;
+    padding-right: 50px;
+}
+
+#states{
+}
+
+#cycle{
+    vertical-align: middle;
+}
+
+
+#calculation{
+    margin-left: 20px;
+}
+
+body::after {
+    content: "";
+    background: url(background.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }

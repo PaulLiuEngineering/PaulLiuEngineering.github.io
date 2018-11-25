@@ -1,0 +1,46 @@
+.button{
+    margin-right: 1vw;
+}
+
+.precondition, #t_and_h, .navigation, .calculation{
+    margin-left: 10%;
+}
+
+td, .title{
+    text-align: center;
+}
+
+#t_and_h,td{
+    border: 1px solid black;    
+}
+
+#t_and_h{
+    margin-top: 1%;
+}
+
+.steps{
+    margin-left: 5%;
+}
+
+.break{
+    margin-top: 1.5%;
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+    margin-top: 0.5%;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid black;
+}
+.frac span.symbol {
+    display: none;
+} 

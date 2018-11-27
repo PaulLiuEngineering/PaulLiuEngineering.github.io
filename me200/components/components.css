@@ -13,12 +13,8 @@
    
 } */
 
-#side{
-    position: absolute;
-    bottom: -150px;
-    left: 40%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+.center{
+    align-self: center;
 }
 /* img{
     position:absolute;

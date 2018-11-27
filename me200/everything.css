@@ -49,6 +49,66 @@ body::after {
     height: 130vh;
 
 }
+.logo{
+    height:6vh;
+    margin-left:5%;
+}
+
+#logo{
+    max-height:6vh;
+}
+
+#title{
+    font-size: 35px;
+  }
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+.header-element {
+    max-width: 10vw;
+    height: 100%;
+    position:relative;
+    margin-top:2%;
+    display:inline-block;
+    margin-right:5%;
+}
+.element-text{
+    color:white;
+    font-size: 20px;
+}
+.element-text:hover{
+    cursor: pointer;
+}
+
+.background {
+    /* display: table; */
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cerv2bg.png');
+    background-position: center top;
+    height: 85vh;
+    color: white;
+}
+
+#components_link {
+    width: 20vw;
+    height: 65vh;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: none;
+}
+
+/* #componentM{
+    width: 20vw;
+    height: 65vh;
+} */
+
+
 
 button {
     color: rgba(30, 22, 54, 0.6);
@@ -58,12 +118,20 @@ button {
     text-transform: uppercase;
     border-radius: 10px;
     /* border: 5px solid transparent; */
-    border-bottom-color: rgba(0,0,0,0.35);
+    border-bottom-color: rgba(0, 0, 0, 0.35);
     cursor: pointer;
-    padding:1%;
+    padding: 1%;
 }
 
 .button:hover {
     color: rgba(255, 255, 255, 0.85);
     box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+.element-text:link{
+    text-decoration:  none;
+}
+
+.elements{
+    margin-left:5%;
 }

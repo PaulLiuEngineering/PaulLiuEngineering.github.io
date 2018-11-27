@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel= 'stylesheet' type="text/css" href = './home.css'/>
-        <script type="text/javascript" src="jquery-1.2.3.pack.js"></script>
-        <script type="text/javascript" src="./jquery.metadata.min.js"></script>
-        <script type="text/javascript" src="./jquery.maphilight.min.js"></script>
-        <script src = './home.js'></script>
-    </head>
-    <body>
-        <img class = 'background'src = background.jpg>
-        <button class = 'button' id = 'home' onclick="location.href='./index.html'">
+
+<head>
+    <link rel='stylesheet' type="text/css" href='./home.css' />
+    <script type="text/javascript" src="jquery-1.2.3.pack.js"></script>
+    <script type="text/javascript" src="./jquery.metadata.min.js"></script>
+    <script type="text/javascript" src="./jquery.maphilight.min.js"></script>
+    <script src='./home.js'></script>
+</head>
+
+<body>
+    <div class='logo'>
+        <img id='logo' src='cerv2_logo.png'>
+        <a id='title'>Team 30 Website--HOME</a>
+    </div>
+    <div class='header'>
+        <ul class='elements'>
+            <li class='header-element'>
+                <a class='element-text' href='./index.html'>Home</a>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='./components/components.html'>Components</a>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='./cycles/cycles.html'>Cycle</a>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='./calculations/calculation.html'>Calculations</a>    
+            </li>
+        </ul>
+    </div>
+    <div class='background'></div>
+    <!-- <button class = 'button' id = 'home' onclick="location.href='./index.html'">
             Home
         </button>
         <button class = 'button' id = 'calculation' onclick="location.href='./calculations/calculation.html'">
@@ -20,18 +42,21 @@
         </button>
         <button class = 'button' id = 'cycle_diagram' onclick="location.href='./cycles/cycles.html'">
             Cycles
-        </button>
-        <div class = 'show' id = 'cycle'>
+        </button> -->
+    <!-- <div class = 'show' id = 'cycle'>
             <img src = './p_h_diagram.png' alt = 'cycle_graph' id = 'cycle_graph'>
-        </div>
-        <div class = 'img' id = 'components_link' >
-            <img src = './pic.png' alt = 'CERV2' usemap = '#mapp' id = 'componentM' class = 'map'>
-            <map name="mapp" id = 'map1'>
-                <area id = 'compresser' shape = 'poly' coords = '197,435,236,427,274,434,288,452,293,477,285,536,249,560,204,551,182,519,181,466,185,441' href = './index.txt' class="{strokeWidth:3}">
-                <area id = 'circuit'  shape="poly" href="./circuit/circuit.html" coords="143,125,150,242,243,239,241,110" class="{strokeWidth:3}">
-                <area id = 'LED'  href="./index.txt" coords="150,45,136,77,204,68,217,31" shape="poly" class="{strokeWidth:3}">
-                <area id= "damper" href="./damper/damper.html" coords="214,265,219,363,130,365,124,262" shape="poly" class="{strokeWidth:3}">
-            </map>
-        </div>
-    </body>
+        </div> -->
+    <!-- <div class='img' id='components_link'>
+        <img src='./pic.png' alt='CERV2' usemap='#mapp' id='componentM' class='map'>
+        <map name="mapp" id='map1'>
+            <area id='compresser' shape='poly' coords='197,435,236,427,274,434,288,452,293,477,285,536,249,560,204,551,182,519,181,466,185,441'
+                href='./index.txt' class="{strokeWidth:3}">
+            <area id='circuit' shape="poly" href="./circuit/circuit.html" coords="143,125,150,242,243,239,241,110"
+                class="{strokeWidth:3}">
+            <area id='LED' href="./index.txt" coords="150,45,136,77,204,68,217,31" shape="poly" class="{strokeWidth:3}">
+            <area id="damper" href="./damper/damper.html" coords="214,265,219,363,130,365,124,262" shape="poly" class="{strokeWidth:3}">
+        </map>
+    </div> -->
+</body>
+
 </html>

@@ -44,3 +44,8 @@ td, .title{
 .frac span.symbol {
     display: none;
 } 
+
+#og-link{
+    color:white;
+    text-decoration:  none;
+}

@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel= 'stylesheet' type="text/css" href = './calculation.css'/>
-        <link rel= 'stylesheet' type="text/css" href = '../everything.css'/>
-    </head>
-    <body>
-        <div id = 'top'>
-            <div class = title>
-                Calculations
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type="text/css" href='./calculation.css' />
+    <link rel='stylesheet' type="text/css" href='../everything.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery.metadata.min.js"></script>
+    <script type="text/javascript" src="../jquery.maphilight.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class='logo'>
+        <img id='logo' src='../cerv2_logo.png' onclick="location.href='https://www.buildequinox.com/'">
+        <a id='title'>Cycles</a>
+    </div>
+    <div class='header'>
+        <ul class='elements'>
+            <li class='header-element'>
+                <a class='element-text' href='../index.html'>Home</a>
+            </li>
+            <li class='header-element'>
+                <div class='drop'>
+                    <a class='element-text' href='../components/components.html'>Components</a>
+                    <div class='drop-content'>
+                        <a href='../compressor/compresser.html'>Compressor</a>
+                        <a href='../circuit/circuit.html'>Circuit</a>
+                        <a href='../damper/damper.html'>Dampers</a>
+                        <a href='../screen/screen.html'>Screen</a>
+                    </div>
+                </div>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='../cycles/cycles.html'>Cycles</a>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='../calculations/calculation.html'>Our Calculations</a>
+            </li>
+        </ul>
+    </div>
+    <div class='background'>
+        <div id='intro'>
+            <div class='precondition'>
+                *Since we are dealing with rifrigerant R134, we use table A-18 on the back of the textbook for all the
+                calculation.<br>
+                *All the data are from <a id = 'og-link'href='https://www.buildequinox.com/downloads/'>https://www.buildequinox.com/downloads/</a>
             </div>
-            <div class = 'navigation'>
-                <button class = 'button' id = 'home' onclick="location.href='../index.html'">
-                    Home
-                </button>
-                <button class = 'button' id = 'calculation' onclick="location.href='../calculations/calculation.html'">
-                    Calculations
-                </button>
-                <button class = 'button' id = 'components' onclick="location.href='../components/components.html'">
-                    Components
-                </button>
-                <button class = 'button' id = 'cycle_diagram' onclick="location.href='../cycles/cycles.html'">
-                    Cycles
-                </button>
-            </div>                   
-        </div>
-        <div id = 'intro'>
-            <div class = 'precondition'>
-                *Since we are dealing with rifrigerant R134, we use table A-18 on the back of the textbook for all the calculation.<br>
-                *All the data are from <a href = 'https://www.buildequinox.com/downloads/'>https://www.buildequinox.com/downloads/</a>
-            </div>
-            <table class = 'precondition' id = 't_and_h'>
+            <table class='precondition' id='t_and_h'>
                 <tr>
                     <td>State/Parameter</td>
                     <td>Temperature(&#8451)</td>
@@ -46,44 +64,45 @@
                     <td>274.104(h<sub>2</sub>)</td>
                 </tr>
             </table>
-            <div class = 'precondition'>mass flow rate, m = 3.71kg/hr = 0.00103 kg/s<br>T<sub>cold</sub> = 23.3&#8451 = 249.5K<br>T<sub>hot</sub> = 54.4&#8451 = 327.55K</div>
-            <div class = 'calculation'>
-                <div class = 'break'>Part 1: Calculation of the power of compressor</div>
-                <div class = 'steps'>
+            <div class='precondition'>mass flow rate, m = 3.71kg/hr = 0.00103 kg/s<br>T<sub>cold</sub> = 23.3&#8451 =
+                249.5K<br>T<sub>hot</sub> = 54.4&#8451 = 327.55K</div>
+            <div class='calculation'>
+                <div class='break'>Part 1: Calculation of the power of compressor</div>
+                <div class='steps'>
                     &#7814 = m * (h<sub>2</sub> - h<sub>1</sub>)<br>
                     &nbsp;&nbsp; &nbsp;&nbsp;= (0.0013kg/s) * (274.104-233.2805)<br>
                     &nbsp;&nbsp; &nbsp;&nbsp;= 0.04204kw<br>
                     &nbsp;&nbsp; &nbsp;&nbsp;= 42.02w
                 </div>
-                <div class = 'break'>Part 2: Calculation of the coefficient of performance</div>
-                <div class = 'steps'>
-                    &#946<sub>max</sub> = 
-                    <span class = 'frac'>T<sub>cold</sub>
+                <div class='break'>Part 2: Calculation of the coefficient of performance</div>
+                <div class='steps'>
+                    &#946<sub>max</sub> =
+                    <span class='frac'>T<sub>cold</sub>
                         <span class="symbol">/</span>
                         <span class="bottom">T<sub>hot</sub>-T<sub>cold</sub></span>
                     </span><br>
-                    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;= 
-                    <span class = 'frac'>249.85K
+                    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;=
+                    <span class='frac'>249.85K
                         <span class="symbol">/</span>
                         <span class="bottom">327.55K - 249.85K</sub></span>
                     </span><br>
                     &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 3.216
                 </div>
-                <div class = 'break'>Part 3: Calculation of the max heat intake rate</div>
-                <div class = 'steps'>
+                <div class='break'>Part 3: Calculation of the max heat intake rate</div>
+                <div class='steps'>
                     &#946<sub>max</sub> =
-                    <span class = 'frac'>q<sub>in</sub> / m</sub>
+                    <span class='frac'>q<sub>in</sub> / m</sub>
                         <span class="symbol">/</span>
                         <span class="bottom">&#7814 / m</span>
                     </span><br>
-                    &nbsp;&nbsp; &nbsp;&nbsp;= 
-                    <span class = 'frac'>q<sub>in</sub></sub>
+                    &nbsp;&nbsp; &nbsp;&nbsp;=
+                    <span class='frac'>q<sub>in</sub></sub>
                         <span class="symbol">/</span>
                         <span class="bottom">&#7814</span>
                     </span><br>
                     Thus,<br>
-                    q<sub>in</sub> = 
-                    <span class = 'frac'>&#946<sub>max</sub>
+                    q<sub>in</sub> =
+                    <span class='frac'>&#946<sub>max</sub>
                         <span class="symbol">/</span>
                         <span class="bottom">&#7814</span>
                     </span><br>
@@ -91,5 +110,8 @@
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+
+</body>
+
 </html>

@@ -90,3 +90,6 @@ button {
     width:auto;
   }
 
+#carousel-nobg{
+    background-color: white;
+}

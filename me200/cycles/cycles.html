@@ -12,25 +12,38 @@
 </head>
 
 <body>
-    <div id='top'>
-        <div class=title>
-            Cycles
-        </div>
-        <div class='navigation'>
-            <button class='button' id='home' onclick="location.href='../index.html'">
-                Home
-            </button>
-            <button class='button' id='calculation' onclick="location.href='../calculations/calculation.html'">
-                Calculations
-            </button>
-            <button class='button' id='components' onclick="location.href='../components/components.html'">
-                Components
-            </button>
-            <button class='button' id='cycle_diagram' onclick="location.href='../cycles/cycles.html'">
-                Cycles
-            </button>
-        </div>
+    <div class='logo'>
+        <img id='logo' src='../cerv2_logo.png' onclick="location.href='https://www.buildequinox.com/'">
+        <a id='title'>Cycles</a>
+    </div>
+    <div class='header'>
+        <ul class='elements'>
+            <li class='header-element'>
+                <a class='element-text' href='../index.html'>Home</a>
+            </li>
+            <li class='header-element'>
+                <div class='drop'>
+                    <a class='element-text' href='../components/components.html'>Components</a>
+                    <div class='drop-content'>
+                        <a href='../compressor/compresser.html'>Compressor</a>
+                        <a href='../circuit/circuit.html'>Circuit</a>
+                        <a href='../damper/damper.html'>Dampers</a>
+                        <a href='../screen/screen.html'>Screen</a>
+                    </div>
+                </div>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='../cycles/cycles.html'>Cycles</a>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='../calculations/calculation.html'>Our Calculations</a>
+            </li>
+        </ul>
+    </div>
+    <div class='background'>
+        <img id = 'cycleimg' src = 'cycle_cerv2.png' class = 'center-block'>
     </div>
 </body>
+
 
 </html>

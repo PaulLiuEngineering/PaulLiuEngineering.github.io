@@ -84,3 +84,8 @@ button {
 .elements{
     margin-left:5%;
 }
+
+.carousel-inner > .item > img {
+    height:65vh;
+    width:auto;
+  }

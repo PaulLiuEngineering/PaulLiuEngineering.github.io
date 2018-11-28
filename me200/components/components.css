@@ -1,26 +1,6 @@
-.button{
-    margin-right: 1vw;
-}
-/* #componentT {
-    /* max-height: 50vh;
-    width:auto;
-    height: auto; 
-    position: absolute;
-    top: 40%; 
-    left: 60%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
-   
-} */
-
 .center{
     align-self: center;
 }
-/* img{
-    position:absolute;
-    margin:0 auto;
-} */
-
 
 #first{
     position:absolute;
@@ -48,3 +28,9 @@
 .carousel-inner img {
     margin: auto;
   }
+
+#componentT, #componentF, #componentB{
+    max-height:75vh;
+    height:auto;
+    object-fit: contain;
+}

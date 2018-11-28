@@ -2,16 +2,18 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' type="text/css" href='./home.css' />
-    <script type="text/javascript" src="jquery-1.2.3.pack.js"></script>
+    <!-- <script type="text/javascript" src="jquery-1.2.3.pack.js"></script>
     <script type="text/javascript" src="./jquery.metadata.min.js"></script>
-    <script type="text/javascript" src="./jquery.maphilight.min.js"></script>
-    <script src='./home.js'></script>
+    <script type="text/javascript" src="./jquery.maphilight.min.js"></script> -->
+    <!-- <script src='./home.js'></script> -->
+    <link rel='stylesheet' type="text/css" href='./everything.css' />
 </head>
 
 <body>
     <div class='logo'>
-        <img id='logo' src='cerv2_logo.png'>
+        <img id='logo' src='cerv2_logo.png' onclick ="location.href='https://www.buildequinox.com/'">
         <a id='title'>Team 30 Website--HOME</a>
     </div>
     <div class='header'>
@@ -20,7 +22,15 @@
                 <a class='element-text' href='./index.html'>Home</a>
             </li>
             <li class='header-element'>
+                <div class = 'drop'>
                 <a class='element-text' href='./components/components.html'>Components</a>
+                <div class = 'drop-content'>
+                    <a href = './compressor/compresser.html'>Compressor</a>
+                    <a href = './circuit/circuit.html'>Circuit</a>
+                    <a href = './damper/damper.html'>Dampers</a>
+                    <a href = './screen/screen.html'>Screen</a>
+                </div> 
+                </div>
             </li>
             <li class='header-element'>
                 <a class='element-text' href='./cycles/cycles.html'>Cycle</a>
@@ -30,7 +40,7 @@
             </li>
         </ul>
     </div>
-    <div class='background'></div>
+    <div class='background'>content</div>
     <!-- <button class = 'button' id = 'home' onclick="location.href='./index.html'">
             Home
         </button>

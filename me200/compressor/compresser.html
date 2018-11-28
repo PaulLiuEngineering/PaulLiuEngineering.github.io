@@ -2,30 +2,60 @@
 <html>
 
 <head>
-    <link rel='stylesheet' type="text/css" href='./screen.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type="text/css" href='compressor.css' />
     <link rel='stylesheet' type="text/css" href='../everything.css' />
 </head>
 
 <body>
-    <div>
-        <div class=title>
-            Compressor
-        </div>
-        <div class='navigation'>
-            <button class='button' id='home' onclick="location.href='../index.html'">
-                Home
-            </button>
-            <button class='button' id='calculation' onclick="location.href='../calculations/calculation.html'">
-                Calculations
-            </button>
-            <button class='button' id='components' onclick="location.href='../components/components.html'">
-                Components
-            </button>
-            <button class='button' id='cycle_diagram' onclick="location.href='../cycles/cycles.html'">
-                Cycles
-            </button>
-        </div>
+    <div class='logo'>
+        <img id='logo' src='../cerv2_logo.png'>
+        <a id='title'>Compressor</a>
     </div>
-</body>
+    <div class='header'>
+        <ul class='elements'>
+            <li class='header-element'>
+                <a class='element-text' href='../index.html'>Home</a>
+            </li>
+            <li class='header-element'>
+                <div class='drop'>
+                    <a class='element-text' href='./components/components.html'>Components</a>
+                    <div class='drop-content'>
+                        <a href='../compressor/compresser.html'>Compressor</a>
+                        <a href='../circuit/circuit.html'>Circuit</a>
+                        <a href='../damper/damper.html'>Dampers</a>
+                        <a href='../screen/screen.html'>Screen</a>
+                    </div>
+                </div>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='../cycles/cycles.html'>Cycle</a>
+            </li>
+            <li class='header-element'>
+                <a class='element-text' href='../calculations/calculation.html'>Calculations</a>
+            </li>
+        </ul>
+    </div>
+    <div class='background'></div>
+    <!-- <div>
+            <div class=title>
+                Compressor
+            </div>
+            <div class='navigation'>
+                <button class='button' id='home' onclick="location.href='../index.html'">
+                    Home
+                </button>
+                <button class='button' id='calculation' onclick="location.href='../calculations/calculation.html'">
+                    Calculations
+                </button>
+                <button class='button' id='components' onclick="location.href='../components/components.html'">
+                    Components
+                </button>
+                <button class='button' id='cycle_diagram' onclick="location.href='../cycles/cycles.html'">
+                    Cycles
+                </button>
+            </div>
+        </div>
+</body> -->
 
 </html>

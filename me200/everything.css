@@ -14,7 +14,6 @@
 }
 
 #title{
-    
     color:black;
     font-size: 40px;
     text-decoration:  none;
@@ -26,7 +25,7 @@
 }
 
 .header-element {
-    max-width: 10vw;
+    max-width: 12vw;
     height: 100%;
     position:relative;
     margin-top:2%;
@@ -48,17 +47,6 @@
     background-position: center top;
     height: 85vh;
     color: white;
-}
-
-#components_link {
-    width: 20vw;
-    height: 65vh;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    display: none;
 }
 
 button {

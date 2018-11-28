@@ -116,3 +116,15 @@ button {
     top:22vh;
     color:red;
 }
+
+.carousel-caption{
+    color:black;
+}
+
+.carousel-indicators li {
+    background-color:grey;
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}

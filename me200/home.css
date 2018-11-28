@@ -85,7 +85,8 @@ button {
     margin-left:5%;
 }
 
-.carousel-inner > .item > img {
+.carousel-inner > .item > a > img {
     height:65vh;
     width:auto;
   }
+

@@ -58,11 +58,11 @@ function init() {
 	document.body.appendChild(renderer.domElement);
 
 
-	objLoader = new THREE.OBJLoader();
-	objLoader.load('new_speaker_mount.obj', function(object){
-		object.position.y -=60;
-		scene.add(object);
-	});
+	// objLoader = new THREE.OBJLoader();
+	// objLoader.load('new_speaker_mount.obj', function(object){
+	// 	object.position.y -=60;
+	// 	scene.add(object);
+	// });
 
 }
 

@@ -39,7 +39,7 @@
 // });
 
 var camera, scene, renderer;
-var geometry, material, mesh;
+var geometry, material, mesh, controls;
 function init() {
 
 	camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
@@ -57,12 +57,17 @@ function init() {
 	renderer.setSize(650, 650/window.innerWidth*window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 
+	controls = new THREE.OrbitControls(camera, renderer.domElement);
+	controls.enableDamping = true;
+	controls.campingFactor = 0.25;
+	controls.enableZoom = true;
 
-	// objLoader = new THREE.OBJLoader();
-	// objLoader.load('new_speaker_mount.obj', function(object){
-	// 	object.position.y -=60;
-	// 	scene.add(object);
-	// });
+
+	objLoader = new THREE.OBJLoader();
+	objLoader.load('https://PaulLiuEngineering.github.io/me270/new_speaker_mount.obj', function(object){
+		object.position.y -=60;
+		scene.add(object);
+	});
 
 }
 
@@ -70,8 +75,8 @@ function animate() {
 
 	requestAnimationFrame(animate);
 
-	mesh.rotation.x += 0.01;
-	mesh.rotation.y += 0.02;
+	mesh.rotation.x += 0.001;
+	mesh.rotation.y += 0.002;
 
 	renderer.render(scene, camera);
 

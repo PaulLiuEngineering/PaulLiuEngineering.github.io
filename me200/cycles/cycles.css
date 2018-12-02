@@ -6,3 +6,15 @@ h1{
     height:75vh;
     width:auto;
 }
+
+/* #componentF, canvas, .mapster_el{
+    /* left: 50% !important;
+    -webkit-transform: translateX(-50%)!important;
+    transform: translateX(-50%)!important; 
+    vertical-align: middle;
+}
+
+.mapster_el{
+    vertical-align: middle;
+    display:none!important;
+} */

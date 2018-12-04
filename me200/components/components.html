@@ -7,11 +7,8 @@
     <link rel='stylesheet' type="text/css" href='../everything.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../jquery.imagemapster.js"></script>
-    <script type="text/javascript" src="../jquery.imagemapster.min.js"></script>
-    
-    <!-- <script type="text/javascript" src="../jquery.rwdImageMaps.js"></script>
-    <script type="text/javascript" src="../jquery.rwdImageMaps.min.js"></script> -->
+    <script type="text/javascript" src="../jquery.metadata.min.js"></script>
+    <script type="text/javascript" src="../jquery.maphilight.min.js"></script>
     <script src='./components.js'></script>
 </head>
 
@@ -33,6 +30,7 @@
                         <a href='../circuit/circuit.html'>Circuit</a>
                         <a href='../damper/damper.html'>Dampers</a>
                         <a href='../screen/screen.html'>Screen</a>
+                        <a href='../duct/duct.html'>Ventilation</a>
                     </div>
                 </div>
             </li>
@@ -48,49 +46,52 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active">
-                    <button id='first'>
+                    <button id='first' class='inside-carousel'>
                         Front
                     </button>
                 </li>
                 <li data-target="#myCarousel" data-slide-to="1">
-                    <button id='second'>
+                    <button id='second' class='inside-carousel'>
                         Top
                     </button>
                 </li>
                 <li data-target="#myCarousel" data-slide-to="2">
-                    <button id='third'>
+                    <button id='third' class='inside-carousel'>
                         Back
                     </button>
                 </li>
             </ol>
             <div class='carousel-inner'>
                 <div class="item active">
-                    <img src='../CERV_front.JPG' alt='CERV2' usemap='#mapp' id='componentF' class='center-block'>
+                    <img src='../CERV_front.JPG' alt='CERV2' usemap='#mapp' id='componentF' class='map'>
                     <div class="carousel-caption">
                         Front
                     </div>
                     <map name="mapp" id='map1'>
                         <area id='compresser' shape='poly' coords='163,484,161,465,180,433,218,432,260,439,270,467,269,505,262,540,232,556,184,552,161,528'
-                            href='../compressor/compresser.html' >
-                        <area id='circuit' href="../circuit/circuit.html" coords="186,148,281,260" shape='rect' >
-                        <area id='LED' href="../screen/screen.html" coords="202,68,205,90,274,93,266,72" shape="poly" >
-                        <area id="damper" href="../damper/damper.html" coords="162,277,245,372" shape="rect" >
+                            href='../compressor/compresser.html' class="{strokeWidth:3}">
+                        <area id='circuit' href="../circuit/circuit.html" coords="186,148,281,260" shape='rect' class="{strokeWidth:3}">
+                        <area id='LED' href="../screen/screen.html" coords="202,68,205,90,274,93,266,72" shape="poly" class="{strokeWidth:3}">
+                        <area id="damper" href="../damper/damper.html" coords="162,277,245,372" shape="rect" class="{strokeWidth:3}">
                     </map>
                 </div>
                 <div class="item">
-                    <img src='../CERV_Top.JPG' alt='CERV2' usemap='#mappp' id='componentT' class='center-block'>
+                    <img src='../CERV_Top.JPG' alt='CERV2' usemap='#mappp' id='componentT' class='map'>
                     <div class="carousel-caption">
                         Top
                     </div>
                     <map name="mappp" id='map1'>
+                        <area id='duct' shape='poly' coords='31,193,366,188,352,66,41,59' href='../duct/duct.html' class="{strokeWidth:3}">
                     </map>
                 </div>
                 <div class="item">
-                    <img src='../CERV_back.JPG' alt='CERV2' usemap='#mapppp' id='componentB' class='center-block'>
+                    <img src='../CERV_back.JPG' alt='CERV2' usemap='#mapppp' id='componentB' class='map'>
                     <div class="carousel-caption">
                         Back
                     </div>
                     <map name="mapppp" id='map1'>
+                        <area id='ventilation' shape='poly' coords='50,338,351,342,360,225,377,185,387,15,11,0,34,176,47,223'
+                            onclick = "location.href='../duct/duct.html'" class="{strokeWidth:3}">
                     </map>
                 </div>
             </div>

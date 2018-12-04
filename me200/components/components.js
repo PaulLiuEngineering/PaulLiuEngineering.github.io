@@ -1,10 +1,13 @@
 $(document).ready(function() {
     // var str = $(this).attr('id');
     // console.log(str);
-    $('img').mapster({
-        fillColor: 'ff0000',
-        fillOpacity: 0.3,
-    }).parent().css({"margin":"0 auto"});
+    // $('img').mapster({
+    //     fillColor: 'ff0000',
+    //     fillOpacity: 0.3,
+    // }).parent().css({"margin":"0 auto"});
+    $('.map').maphilight(
+       
+    ).parent().css({"margin":"0 auto"});
     // $("#components").click(function(){
 
     //     var x = document.getElementById("components_link");

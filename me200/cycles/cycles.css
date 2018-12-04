@@ -2,9 +2,15 @@ h1{
     text-align: center;
 }
 
-#cycleimg{
-    height:75vh;
+.cycleimg{
+    height:65vh;
     width:auto;
+    margin-left:5%;
+    background-color: white;
+}
+
+#cycle1{
+    margin-left:5%;
 }
 
 /* #componentF, canvas, .mapster_el{

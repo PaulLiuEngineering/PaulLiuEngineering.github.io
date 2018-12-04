@@ -64,7 +64,7 @@ function init() {
 
 
 	objLoader = new THREE.OBJLoader();
-	objLoader.load('https://PaulLiuEngineering.github.io/me270/new_speaker_mount.obj', function(object){
+	objLoader.load('https://github.com/PaulLiuEngineering/PaulLiuEngineering.github.io/blob/master/me270/new_speaker_mount.obj', function(object){
 		object.position.y -=60;
 		scene.add(object);
 	});
@@ -74,11 +74,11 @@ function init() {
 function animate() {
 
 	requestAnimationFrame(animate);
-
+	renderer.render(scene, camera);
 	mesh.rotation.x += 0.001;
 	mesh.rotation.y += 0.002;
 
-	renderer.render(scene, camera);
+	
 
 }
 

@@ -27,7 +27,7 @@
   }
 
 #componentT, #componentF, #componentB{
-    max-height:75vh;
+    height:75vh;
     height:auto;
     object-fit: contain;
 }

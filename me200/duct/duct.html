@@ -9,6 +9,7 @@
     <script type="text/javascript" src="../jquery.metadata.min.js"></script>
     <script type="text/javascript" src="../jquery.maphilight.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="duct.js"></script>
 
     <!-- <script type="text/javascript" src="cycles.js"></script> -->
 </head>
@@ -44,13 +45,19 @@
         </ul>
     </div>
     <div class='background'>
-        <img id='cycleimg1' src='../CERV_Top.JPG' class='' usemap='map1'>
+        <img id='cycleimg1' src='../CERV_Top.JPG' class='map' usemap='#map1'>
         <map name="map1" id='map1'>
-
+            <area id='supp' shape='circle' coords='125,115,53' class="{strokeWidth:3}" link-pt = 'supp-duct'>
+            <area id='exhaust' coords="277,111,50" shape='circle' class="{strokeWidth:3}" link-pt = 'exhaust-duct'>
+            <area id='fresh' coords="289,281,57" shape="circle" class="{strokeWidth:3}" link-pt = 'fresh-duct'>
+            <area id="return" coords="300,452,67" shape="circle" class="{strokeWidth:3}" link-pt = 'return-duct'>
         </map>
-        <img id='cycleimg2' src='../cycles/cycle_cerv2.png' class='' usemap='map2'>
+        <img id='cycleimg2' src='../cycles/cycle_cerv2.png' class='' usemap='#map2'>
         <map name="map2" id='map2'>
-
+            <area id='supp-duct' shape='poly' coords='125,115,53' class="{strokeWidth:3}">
+            <area id='exhaust-duct' shape='poly' coords="577,402,563,405,557,422,563,432,578,438,614,437,691,437,691,424,699,411,695,401" class="{strokeWidth:3}">
+            <area id='fresh-duct' shape='poly' coords="576,449,561,457,557,471,564,484,577,486,690,485,692,471,700,461,695,449" class="{strokeWidth:3}">
+            <area id="return-duct" shape='poly' coords="300,452,67" class="{strokeWidth:3}">
         </map>
     </div>
 </body>

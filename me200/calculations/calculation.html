@@ -46,9 +46,9 @@
             <div class='precondition'>
                 *Since we are dealing with rifrigerant R134, we use table A-18 on the back of the textbook for all the
                 calculation.<br>
-                *All the data are from <a id = 'og-link'href='https://www.buildequinox.com/downloads/'>https://www.buildequinox.com/downloads/</a>
+                *All the data are from <a id='og-link' href='https://www.buildequinox.com/downloads/'>https://www.buildequinox.com/downloads/</a>
             </div>
-            <table class='precondition' id='t_and_h'>
+            <!-- <table class='precondition' id='t_and_h'>
                 <tr>
                     <td>State/Parameter</td>
                     <td>Temperature(&#8451)</td>
@@ -109,7 +109,40 @@
                     </span><br>
                     &nbsp;&nbsp; &nbsp;&nbsp;= 0.1352kW
                 </div>
+            </div> -->
+            <div class='center-block' id='tit1'>
+                Heat Rate Calculation
             </div>
+            <img src='Heat_rate.png' id='heat-rate' class='center-block'>
+            <div class='center-block exp'>
+                The values we got for the heat and work rates are consistent with the data on the CERV 2. The
+                compressor’s datasheet gives values between 69 to 165 W, meaning that our calculation is accurate. The
+                CERV 2 advertises a cooling rate of 1 to 2 kW; according to our calculations, the evaporator is
+                absorbing 1.168 kW--this is the cooling rate that we can compare to the CERV 2’s advertised values.
+            </div>
+            <div class='center-block' id='tit2'>
+                Heat Rate Calculation(Convection)
+            </div>
+            <img src='Heat_rate_convection.png' id='heat-rate-convection' class='center-block'>
+            <div class='center-block exp'>
+                Looking at the final values, there are a lot of questions that come up; first of all, these values are
+                extremely high compared to what we obtained using the ideal cycle. With the air temperatures we
+                assumed, the evaporator and condenser temperatures are likely not what we assumed them to be. One
+                indication of this is that the condenser would be absorbing heat opposed to releasing it in
+                recirculation--this is against the purpose of the condenser.
+                The net heat for both modes are also the same, which is not expected considering the change in
+                temperature gradient for the evaporator and condenser. Overall, the biggest issue with these
+                calculations arises from the assumption of temperatures, which has the largest impact on these values.
+                Convection heat transfer is a complex subject, which qualitatively helps us explain why the difference
+                in cooling potential between ventilation and recirculation modes is so great, but is unable to
+                accurately explain this quantitatively.
+            </div>
+            <div class='center-block' id='tit3'>COP Calculation</div>
+            <img src='COP.png' id='COP' class='center-block'>
+            <div class = 'exp'></div>
+            <div class='center-block' id='tit4'>Product Comparison Calculation</div>
+            <img src='comparison.png' id='comparison' class='center-block'>
+            <div class = 'exp'></div>
         </div>
     </div>
 

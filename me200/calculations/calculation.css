@@ -49,3 +49,21 @@ td, .title{
     color:white;
     text-decoration:  none;
 }
+
+.center-block {
+    display: table;
+    margin: 0 auto;
+    font-size:30px;
+  }
+
+#heat-rate, #heat-rate-convection, #COP, #comparison{
+    width:50vw;
+    height:auto;
+    
+}
+
+.exp{
+    width:50vw !important;
+    font-size: 20px !important;
+    margin-bottom:5%;
+}

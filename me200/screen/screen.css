@@ -1,15 +1,30 @@
 #show-first{
     height:35vh;
     width:auto;
-    margin-left:7%;
-    margin-top:10%;
+    margin-left:15%;
+    margin-top:5%;
 
 }
 
 #show-first1{
     height:35vh;
     width:auto;
-    margin-left:7%;
-    margin-top:10%;
+    margin-left:15%;
+    margin-top:5%;
 
+}
+
+#screen-intro{
+    margin-top:5%;
+    height:15vh;
+    width:50vw;
+    font-size:25px;
+}
+
+#intro-title{
+    position:absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top:-3%;
 }

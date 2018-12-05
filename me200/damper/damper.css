@@ -1,3 +1,34 @@
 .intro{
     margin-left: 10%;
+    font-size: 20px;
+}
+
+#fstpic{
+    height:50vh;
+    width:auto;
+    margin-left: 10%;
+    margin-top:4%;
+    clear:right;
+}
+
+#ndpic{
+    width:45vw;
+    height:auto;
+    margin-right:10%;
+    margin-top:4%;
+    display:inline-block;
+}
+
+#dd1{
+    position: absolute;
+    margin-top:1%;
+    margin-left:20%;
+    font-size: 30px;
+}
+
+#dd2{
+    position: absolute;
+    margin-top:1%;
+    margin-left:50%;
+    font-size: 30px;
 }

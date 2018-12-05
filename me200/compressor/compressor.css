@@ -1,3 +1,32 @@
-#title{
-    align-items: center;
+.main-pic
+{
+    height:35vh;
+    width:auto;
+}
+
+#one{
+    margin-left:10%;
+}
+
+#two, #three{
+    margin-left:5%;
+}
+
+#exp{
+    margin-top:5%;
+    margin-left:5%;
+}
+
+.exp{
+    margin-left:10%;
+    max-width: 17vw;
+    font-size:30px;
+    clear:right;
+    display:inline-block;
+}
+#twoexp{
+    margin-left: 12%;
+}
+#threeexp{
+    margin-left:13%;
 }

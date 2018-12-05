@@ -93,3 +93,7 @@ button {
 #carousel-nobg{
     background-color: white;
 }
+
+#myCarousel{
+    margin-top:10vh;
+}

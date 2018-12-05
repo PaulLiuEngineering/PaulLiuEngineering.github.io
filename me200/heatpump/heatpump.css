@@ -1,0 +1,15 @@
+.center-block{
+    display: table;
+    margin: 0 auto;
+}
+
+#heat{
+    height:65vh;
+    width:auto;
+}
+
+#heat-text{
+    width:50%;
+    height:auto;
+    font-size:30px;
+}

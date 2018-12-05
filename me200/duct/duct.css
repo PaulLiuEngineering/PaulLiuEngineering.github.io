@@ -1,26 +1,18 @@
 #cycleimg1{
-    height:85vh;
+    height:75vh;
     width:auto;
-    
 }
 #cycleimg2{
     /* position:absolute;
     top:20%;
     right:5%; */
-    height:85vh;
+    margin-top:5%;
+    height:75vh;
     width:auto;
     display:inline-block;
 }
 
-.background div{
-    clear:right;
-}
-
-.background canvas{
-    height:85vh;
-    width:auto;
-}
-
-.background{
-    height:115vh;
+.center-block{
+    display: table;
+    margin: 0 auto;
 }

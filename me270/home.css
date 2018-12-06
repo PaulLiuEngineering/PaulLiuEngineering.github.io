@@ -1,7 +1,20 @@
 canvas{
     position:absolute;
     top:25vh;
-    left:5%;
-    height:500px;
-    width:auto;
+    right:5%;
+    width:50vw !important;
+    height:auto !important;
+}
+
+.intro{
+    margin-left:5%;
+
+}
+
+#intro{
+    margin-top:2%;
+    font-size: 20px;
+    width:35vw;
+    height:auto;
+    color:black;
 }

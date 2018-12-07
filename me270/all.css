@@ -145,4 +145,6 @@ button:hover:after {
 .subt{
     font-size: 40px;
     color:black;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

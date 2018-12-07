@@ -1,9 +1,10 @@
-canvas{
+#cad{
     position:absolute;
     top:25vh;
     right:5%;
     width:50vw !important;
     height:auto !important;
+    z-index: 0;
 }
 
 .intro{
@@ -13,8 +14,22 @@ canvas{
 
 #intro{
     margin-top:2%;
-    font-size: 20px;
+    font-size: 40px;
     width:35vw;
     height:auto;
     color:black;
+}
+
+#a{
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+}
+
+
+#a:hover{
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
 }

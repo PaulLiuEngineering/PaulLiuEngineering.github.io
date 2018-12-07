@@ -1,0 +1,69 @@
+.intro{
+    display: table;
+    margin: 0 auto;
+}
+
+#intro{
+    margin-top:2%;
+    font-size: 20px;
+    width:40vw;
+    height:auto;
+    color:black;
+}
+
+.start{
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+}
+
+.start:hover{
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.center-block{
+    display: table;
+    margin: 0 auto;
+}
+
+#pdtree{
+    font-size: 40px;
+    color:black;
+}
+
+#pdtreeimg{
+    width:50vw;
+    height:auto;
+}
+
+.subt{
+    font-size: 40px;
+    color:black;
+}
+
+#compimgs img{
+    width:14vw;
+    margin-left:2vw;
+}
+
+
+#compimgs{
+    width:50vw;
+    height:auto;
+}
+
+.dfm{
+    width:50vw;
+    height:auto;
+}
+
+#mid-analysis{
+    margin-top:2%;
+    font-size: 20px;
+    width:40vw;
+    height:auto;
+    color:black;
+}

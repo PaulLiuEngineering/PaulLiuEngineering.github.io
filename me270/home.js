@@ -64,8 +64,8 @@ function init() {
 
 
 	objLoader = new THREE.OBJLoader();
-	objLoader.load('https://github.com/PaulLiuEngineering/PaulLiuEngineering.github.io/blob/master/me270/new_speaker_mount.obj', function(object){
-		object.position.y -=60;
+	objLoader.load('model/new_speaker_mount.obj', function(object){
+		// mesh.position.set(0,0,0);
 		scene.add(object);
 	});
 

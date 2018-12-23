@@ -35,7 +35,7 @@
 .links{
     position:absolute;
     bottom:15vh;
-    margin-left:5%;
+    margin-left:10%;
     min-width:60vw;
 }
 
@@ -49,4 +49,11 @@
     margin: 0 auto;
     height:55vh;
     width:auto;
+}
+
+.text{
+    margin-top:2%;
+    margin-left:10%;
+    margin-right:10%;
+    text-indent:50px;
 }

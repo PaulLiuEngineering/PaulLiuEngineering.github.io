@@ -32,6 +32,11 @@
 
 .links{
     position:absolute;
-    bottom:20vh;
-    vertical-align:middle;
+    bottom:15vh;
+    margin-left:5%;
+    min-width:60vw;
+}
+
+#me270{
+    margin-left:5%;
 }

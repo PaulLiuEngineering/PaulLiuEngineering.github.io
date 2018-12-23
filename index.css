@@ -1,5 +1,6 @@
 .header{
     height:10vh;
+    width:100vw;
     background-color: black;
 }
 
@@ -13,8 +14,9 @@
 
 #resume{
     margin-top:2.5vh;
-    color:black;
-    float:right;
+    color:white;
+    margin-left:65%;
+    text-decoration: none;
 }
 
 .background{

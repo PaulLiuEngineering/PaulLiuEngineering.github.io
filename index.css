@@ -42,3 +42,11 @@
 #me270{
     margin-left:5%;
 }
+
+#profile{
+    top:2vh;
+    display: table;
+    margin: 0 auto;
+    height:55vh;
+    width:auto;
+}

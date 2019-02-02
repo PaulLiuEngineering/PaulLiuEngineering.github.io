@@ -91,27 +91,27 @@
     </div> -->
     <div class="operate-con">
         <div>
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">绘制海量点
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Draw multiple points
             </button>
         </div>
         <div style='margin-top:10px'>
-            <button type="button" class="btn btn-primary btn-lg hea" data-toggle="modal" data-target="#myGeohashModal">生成Geohash
+            <button type="button" class="btn btn-primary btn-lg hea" data-toggle="modal" data-target="#myGeohashModal">generate geohashed
             </button>
         </div>
         <div style='margin-top:10px'>
-            <button type="button" class="btn btn-primary btn-lg hea" data-toggle="modal" data-target="#myHeatModal">绘制热力图
+            <button type="button" class="btn btn-primary btn-lg hea" data-toggle="modal" data-target="#myHeatModal">heatmap
             </button>
         </div>
         <div style='margin-top:10px'>
-            <button type="button" class="btn btn-primary btn-lg hea" data-toggle="modal" data-target="#myPolygonModal">绘制多围栏
+            <button type="button" class="btn btn-primary btn-lg hea" data-toggle="modal" data-target="#myPolygonModal">geofences
             </button>
         </div>
         <div style='margin-top:10px'>
-            <button type="button" class="btn btn-primary hea" onclick='remove_overlay()' style='width:125px;height:45px'>清除所有绘制
+            <button type="button" class="btn btn-primary hea" onclick='remove_overlay()' style='width:125px;height:45px'>clear map
             </button>
         </div>
         <div style='margin-top:10px'>
-            <button type="button" class="btn btn-primary hea" onclick='removeLastEntry()' style='width:125px;height:45px'>取消上一步操作
+            <button type="button" class="btn btn-primary hea" onclick='removeLastEntry()' style='width:125px;height:45px'>undo the last step
             </button>
         </div>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -119,10 +119,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">数据<span id="tips" class='tips'></span></h4>
+                        <h4 class="modal-title" id="myModalLabel">data<span id="tips" class='tips'></span></h4>
                     </div>
                     <div class="modal-body">
-                        <textarea id='myText' style='width:500px;height:300px' placeholder='数据格式如下：经度,纬度;116.762008666992,40.3122711181641;116.40495300293,39.8151397705078;带分打点(分数为0-1之间)则如下:经度,纬度;分数|116.762008666992,40.3122711181641;0.98|116.40495300293,39.8151397705078;0.99|'></textarea>
+                        <textarea id='myText' style='width:500px;height:300px' placeholder='format：longitude,latitude;116.762008666992,40.3122711181641;116.40495300293,39.8151397705078;带分打点(分数为0-1之间)则如下:经度,纬度;分数|116.762008666992,40.3122711181641;0.98|116.40495300293,39.8151397705078;0.99|'></textarea>
                         <div>
                             <div class="radio">
                               <label>
@@ -144,11 +144,11 @@
                             </div>
                         </div>
                         <button type="button" class="btn btn-primary" onclick='drawpointsG()'>
-                            绘制点
+                            draw points
                         </button>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                         <!--  <button type="button" class="btn btn-primary" onclick="clearContent()">clear</button> -->
                     </div>
                 </div>
@@ -159,16 +159,16 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">数据<span id="tips" class='tips'></span></h4>
+                        <h4 class="modal-title" id="myModalLabel">data<span id="tips" class='tips'></span></h4>
                     </div>
                     <div class="modal-body">
-                        <textarea id='myGeohashText' style='width:500px;height:300px' placeholder='数据格式如下:哈希块1,哈希块2,wtfrt34,wftsrt4,如果带得分则为哈希块1,得分1;哈希块2,得分2;wtfrt34,0.98;wftsrt4,0.67; 注：若希望清楚哈希块群，请将地图清零，程序员已经努力了QAQ'></textarea>
+                        <textarea id='myGeohashText' style='width:500px;height:300px' placeholder='format: geohash1, geohash2,wtfrt34,wftsrt4,如果带得分则为哈希块1,得分1;哈希块2,得分2;wtfrt34,0.98;wftsrt4,0.67; 注：若希望清楚哈希块群，请将地图清零，程序员已经努力了QAQ'></textarea>
                         <button type="button" class="btn btn-primary" onclick='drawGeohash()'>
-                            绘制Geohash
+                            draw Geohash
                         </button>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                         <!--  <button type="button" class="btn btn-primary" onclick="clearContent()">clear</button> -->
                     </div>
                 </div>
@@ -179,10 +179,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">数据<span id="tips" class='tips'></span></h4>
+                        <h4 class="modal-title" id="myModalLabel">data<span id="tips" class='tips'></span></h4>
                     </div>
                     <div class="modal-body">
-                        <textarea id='myHeatText' style='width:500px;height:300px' placeholder='数据格式如下："经度,纬度;权重:"例如:116.32667541503906,39.88655090332031;5.94382708129:116.43791198730469,39.56382751464844;0.149290423662:116.32667541503906,39.88655090332031;5.94382708129:116.43791198730469,39.56382751464844;0.149290423662:'></textarea>
+                        <textarea id='myHeatText' style='width:500px;height:300px' placeholder='format"longitude,latitude,weight:"例如:116.32667541503906,39.88655090332031;5.94382708129:116.43791198730469,39.56382751464844;0.149290423662:116.32667541503906,39.88655090332031;5.94382708129:116.43791198730469,39.56382751464844;0.149290423662:'></textarea>
                         <br/> 
                         <!-- 热力半径： -->
                       <!--   <input type="text" id="heatRadius" value="50"> 热力半径最大值：
@@ -194,7 +194,7 @@
                             </button> -->
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                         </div>
                     </div>
                 </div>
@@ -205,10 +205,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">数据<span id="tips" class='tips'></span></h4>
+                        <h4 class="modal-title" id="myModalLabel">data<span id="tips" class='tips'></span></h4>
                     </div>
                     <div class="modal-body">
-                        <textarea id='myPolygonText' style='width:500px;height:300px' placeholder='数据格式如下:经度,纬度;经度,纬度|经度,纬度 不同的围栏需要用 | 隔开 若要赋予围栏名称则需要逐一输入围栏,格式为 围栏名称:围栏'></textarea>
+                        <textarea id='myPolygonText' style='width:500px;height:300px' placeholder='format:longitude,latitude;longitude,latitude|longitude,latitude; 不同的围栏需要用 | 隔开 若要赋予围栏名称则需要逐一输入围栏,格式为 围栏名称:围栏'></textarea>
                         <div>
                             <div class="radio">
                               <label>
@@ -231,11 +231,11 @@
                         </div>
                         <div style='margin-right:10px;margin-top:10px'>
                             <button type="button" class="btn btn-primary" onclick='drawPolygonMap()'>
-                                绘制多围栏
+                                draw geofences
                             </button>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                         </div>
                     </div>
                 </div>

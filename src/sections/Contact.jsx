@@ -10,7 +10,7 @@ export default function Contact() {
         <a href={contact.githubUrl} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-        <a href="/resume.docx" download>Resume</a>
+        <a href="/resume.pdf" download>Resume</a>
       </div>
       <p className="contact__address">{contact.location}</p>
     </footer>
